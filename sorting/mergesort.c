@@ -30,8 +30,8 @@ void mergeSort(int arr[], int left, int right)
         int mid = (left + right) / 2;
 
         mergeSort(arr, left, mid);
-        mergeSort(arr, mid + 1, right); 
-        merge(arr, left, mid, right);   
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
     }
 }
 
@@ -44,7 +44,7 @@ void printArray(int arr[], int size)
 
 int main()
 {
-    int arr[] = {7,8,1,24,55,6,79};
+    int arr[] = {7, 8, 1, 24, 55, 6, 79};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     printf("the given array is:\n");
